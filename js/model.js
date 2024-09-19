@@ -9,7 +9,6 @@ class CustomHeader extends HTMLElement {
                     </a>
                 </div>
                 <div class="Redes">
-                    <a href="https://Instagram.com/" target="_blank"><img src="/Media/Instagram_Log.jpg" alt="Instagram" height="30px" width="30px"></a>
                     <a href="https://www.facebook.com/profile.php?id=61566061223842&mibextid=kFxxJD" target="_blank"><img src="/Media/Facebook-logo.jpg" alt="Instagram" height="30px" width="30px"></a>
                     <a href="https://www.youtube.com/channel/UCXcJzXBxbJI1hnUarRBh1AA" target="_blank"><img src="/Media/Youtube-Logo.png" alt="Instagram" height="30px" width="30px"></a>
                 </div>
