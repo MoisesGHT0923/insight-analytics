@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Content{
+    display: flex;
+    margin-top: 20px;
+    background-color: #ffffff;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.IC1{
+    margin: 20px;
+    width: 50%;
+}
+
+.IC1 h2{
+    text-align: center;
+}
+
+.IC1 a{
+    color: black;
+}
+
+.IC1-2{
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.IC1-2 img{
+    width: 50%;
+    max-width: 300px;
+
+}
+
+.IC2{
+    margin: 20px;
+    width: 50%;
+}
+
+.IC2 h2{
+    text-align: center;
+}
+
+.IC2-1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.IC2-2{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 40%;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.IC2-2 img{
+    height: 150px;
+    width: 100%;
+}
+
+.IC2 a{
+    color: black;
+    align-items: center;
+}

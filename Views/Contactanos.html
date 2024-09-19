@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contactanos</title>
+    <link rel="stylesheet" href="/Css/contactanos.css">
+    <link rel="stylesheet" href="/Css/styles.css">
+</head>
+<body>
+    <header>
+        <custom-header></custom-header>
+    </header>
+        <div class="content-title"> <!-- Titulo centrado-->
+            <h2 class="Tema">Contacto</h2> 
+        </div>
+    <main>
+
+        <section class="contact-section">
+            <div class="contact-container">
+                <h2>Contactanos</h2>
+                <p>Dejanos tu opinión</p>
+                <form id="contactForm">
+                    <input type="text" id="nombres" name="nombres" placeholder="Nombres*" required>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos*" required>
+                    <input type="email" id="email" name="email" placeholder="E-mail*" required>
+                    <input type="text" id="subject" name="subject" placeholder="Teléfono*" required>
+                    <textarea id="message" name="message" placeholder="Tu mensaje aquí..." rows="4" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <custom-footer></custom-footer>
+    </footer>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            // Obtener los valores de los campos
+            var nombres = document.getElementById('nombres').value;
+            var apellidos = document.getElementById('apellidos').value;
+    
+             // Expresión regular para detectar números
+            var regex = /\d/;
+    
+            // Validar si los campos contienen números
+            if (regex.test(nombres) || regex.test(apellidos)) {
+                alert("Los campos de Nombres y Apellidos no deben contener números.");
+                event.preventDefault(); // Evitar que el formulario se envíe
+            }
+        });
+    </script>
+    <script src="../js/menu.js"></script>
+    <script src="/js/model.js"></script>
+</body>
+</html>

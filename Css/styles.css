@@ -1,0 +1,288 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+body {
+    font-family: 'Century Gothic', 'Century Gothic', Century Gothic, sans-serif;
+    background-color: #ffffff;
+    color: var(--color-text);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+}
+
+.logo{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    color: rgb(32, 56, 100);
+    justify-content: flex-start;
+    justify-content: space-between;
+}
+
+.Redes{
+    align-content: center;
+    text-align: center;
+    justify-items: center;
+}
+
+.Redes a{
+    margin: 5px;
+}
+
+.searh{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.bnm-2 {
+    display: flex;
+    justify-content: flex-end; /* alinea el menú a la derecha */
+    flex-grow: 1; /* hace que el menú use el espacio restante */
+    background-color:rgb(243, 243, 243);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.bnm-2 ul{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;  
+}
+
+.bnm-2 ul li{
+    background-color:rgb(243, 243, 243);
+    list-style: none;
+    min-width: 100px;
+    margin-left: 2px;
+}
+
+.bnm-2 ul li a{
+    padding: 10px;
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+.bnm-2 ul li:hover{
+    background-color: rgb(32, 56, 100);
+    color: rgb(143, 170, 220);
+    
+}
+
+.bnm-2 ul li > a:hover{
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navbar li ul {
+    padding: 0;
+    display: none;
+    position: absolute;
+    z-index: 1000; /* Asegura que el submenú esté por encima del slider */
+}
+
+.navbar li ul li{
+    margin: 0;
+    position: relative;
+    text-align: left;
+}
+
+.navbar li:hover > ul{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar li:hover > a{
+    color: white;
+}
+
+.grid-menu{
+    top: 0px;
+    left: 130px;
+    width: 260px;
+}
+ 
+.grid-menu-2{
+    width: 260px;
+    top: 0px;
+    left: 390px;
+}
+
+main {
+    background-color: #ffff;
+}
+
+
+h1 {
+    font-family: 'Century Gothic', Century Gothic, monospace;
+    color: var(--color-secondary);
+    font-size: 2.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0.5rem;
+    text-align: left;
+}
+
+th {
+    background-color: var(--color-secondary);
+    color: var(--color-background);
+}
+
+.menu-toggle {
+    display: none; /* oculta el menú en más de 991px*/
+}
+
+/* para las pantallitas pequeñas */
+@media (max-width: 1121px) {
+
+    .bnm-2 {
+        display: none;     /* oculta el menú por defecto en pantallas pequeñas */
+        flex-direction: column;
+        position: absolute;
+        top: 95px; /* ajusta la distancia desde el encabezado  */
+        right: 0;
+        width: 250px; /* compone el ancho del menú desplegable */
+        z-index: 1000; /*  hace ke el menú esté por encima del contenido */
+    }
+
+    /* muestra el menú cuando esté activo */
+    .bnm-2.active {
+        display: flex;
+    }
+
+    /* posición de el ícono del menú */
+    .menu-toggle {
+        display: block;
+        background-color: var(--color-primary);
+        color: var(--color-background);
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 2rem;
+        position: absolute; 
+        right: 10px; /* ajusta el espacio de el borde derecho */
+        z-index: 1001; /*  que los botones estén por encima del menú */
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start; /* para que el menú esté a la derecha  */
+    }
+
+    .bnm-2 ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .bnm-2 ul li {
+        margin: 0;
+        width: 100%;
+        position: relative;
+    }
+
+    .bnm-2 ul li a {
+        padding: 15px;
+        text-align: left;
+        width: 100%;
+        
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+footer {
+    background-color: rgb(32, 56, 100);
+    color: rgb(209, 225, 255);
+    padding: 2rem 0;
+    font-family: 'Century Gothic', 'Century Gothic', Century Gothic, sans-serif;
+}
+
+.footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 20px 0;
+}
+
+.footer-table td {
+    vertical-align: top;
+    width: 33.33%; /* Divide el espacio equitativamente entre las tres columnas */
+}
+
+.footer-table h3 {
+    color: rgb(143, 170, 220);
+    margin-bottom: 1rem;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.footer-table ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-table ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-table a {
+    color: rgb(209, 225, 255);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-table a:hover {
+    color: #145c9e;
+}
+
+.footer-table p {
+    margin: 0.5rem 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgb(143, 170, 220);
+    font-size: 0.9em;
+}
+
+.sena-logo{
+    margin-top: 10px;
+    text-align: center
+}

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quienes somos</title>
+    <link rel="stylesheet" href="/Css/styles.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        main {
+            background-color: #ffff;    
+        }
+        .Nosotros{
+            background-color: rgb(32, 56, 100);
+            display: flex;
+        }
+    
+        .Nosotros div{
+            color: white;
+            font-size: 30px;
+            height: 350px;
+        }
+    
+        .Nosotros-1{
+            width: 30%;
+        }
+    
+        .Nosotros-2{
+            width: 60%;
+            padding-right: 30%;
+        }
+
+        .Nosotros-2 p{
+            font-size: 20px;
+        }
+
+        .main-content{
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+
+        .content h2{
+            text-align: center;
+            color: #185428;
+            font-size: 40px;
+        }
+        .content-0{
+            display: flex;
+            height: 800px;
+        }
+    
+        .content-1{
+            align-content: center;
+            text-align: center;
+            margin: 40px;
+            width: 16%;
+        }
+        
+        .content-1 img{
+            border-radius: 40px;
+            height: 80px;
+            width: 80px;
+        }
+    
+        .content-2{
+            align-content: center;
+            text-align: center;
+            margin-left: 40px;
+            margin-right: 40px;
+            width: 16%;
+        }
+
+        .content-2 div{
+            align-content: center;
+            height: 300px;
+        }
+    
+        .content-2 img{
+            border-radius: 40px;
+            height: 80px;
+            width: 80px;
+        }
+    
+        .content-3{
+            align-content: center;
+            text-align: center;
+            width: 16%;
+        }
+    
+        .content-3 img{
+            margin: 100px 20px 100px 20px;
+        }
+    
+        .content-4{
+            align-content: center;
+            text-align: center;
+            height: 380px;
+            width: 25%;
+        }
+    
+        .content-4 div{
+            margin-left: 15px;
+            margin-right: 15px;
+            
+        }
+    
+        .content-4 img{
+            border-radius: 40px;
+            height: 80px;
+            width: 80px;
+        }
+    
+        .borde-1{
+            border: 1px black solid;
+            margin: 0% 0px 1% 0px;
+        }
+    
+        .borde-2{
+            border: 1px black solid;
+            margin: 1% 0px 0px 0px;
+        }
+    
+        .card{
+            display: flex;
+        }
+
+        .GR-Css2{
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <custom-header></custom-header>
+    </header>
+    <div class="Nosotros">
+        <div class="Nosotros-1">
+            <img src="" alt="">
+        </div>
+        <div class="Nosotros-2">
+            <h2>Nosotros</h2>
+            <p>Somos un equipo de aprendices del SENA, ficha 2926370, comprometidos con el desarrollo de proyectos que reflejan nuestras habilidades y formación técnica. Nos dedicamos a aplicar nuestros conocimientos para enfrentar desafíos reales, buscando siempre aportar soluciones prácticas y significativas. A través de nuestro trabajo conjunto, nos esforzamos por crecer tanto profesional como personalmente, con el objetivo de contribuir positivamente a nuestra comunidad.</p>
+        </div>
+    </div>
+<main>
+    <div>
+        <div class="content">
+            <h2>EQUIPO SENA</h2><!-- Titulo -->
+        </div>
+        <div class="main-content">
+            <div class="content-0">
+                <div class="content-1"><!--Contenedor del lider-->
+                    <h4>Lider</h4> <img src="/Media/Fotos/logo_prueba.png" alt="">
+                    <p>Miguel Olivares</p>
+                </div>
+                <div class="content-2"><!--Contenedor de lideres-->
+                    <div><!--LIDER 1-->
+                        <h4>Lider Frontend</h4>
+                        <img src="/Views/Sobre Nosotros/Nosotros/1641337792985 - Santiago Sarmiento.jpg" alt="">
+                        <p>Santiago Sarmiento</p>
+                    </div>
+                    <div><!--LIDER 2-->
+                        <h4>Lider Backend</h4>
+                        <img src="/Views/Sobre Nosotros/Nosotros/Laura.jpg" alt="">
+                        <p>Laura Ortiz</p>
+                    </div>
+                </div>
+                <div class="content-3"><!--Contenedor de flechas-->
+                    <div>
+                        <img src="/Media/Flecha.png" alt="" height="100px" width="100px">
+                    </div><!--Flechas-->
+                    <div>
+                        <img src="/Media/Flecha.png" alt="" height="100px" width="100px">
+                    </div><!--Flechas-->
+                </div>
+                <div class="content-4"><!--Contenedor de equipos-->
+                    <div class="card"><!--equipo 1-->
+                        <div class="borde-1"><!--DISEÑO-->
+                            <h3>Diseño</h3>
+                            <div>
+                                <img src="/Views/Sobre Nosotros/Nosotros/24. FOTO FONDO BLANCO 3X4.jpeg" alt="">
+                                <p>Catalina Bell</p>
+                            </div>
+                            <div>
+                                <img src="/Views/Sobre Nosotros/Nosotros/IMG_20240913_201555 - Ferney Passo.jpg" alt="">
+                                <p>Ferney Passo</p>
+                            </div>
+                        </div>
+                        <div  class="borde-1"><!--CSS-->
+                            <h3>CSS</h3>
+                            <div>
+                                <img src="/Media/Fotos/logo_prueba.png" alt="">
+                                <p>Rafael Prieto</p>
+                            </div>
+                            <div>
+                                <img src="/Views/Sobre Nosotros/Nosotros/IMG-20240906-WA0013 - Marcelo.jpg" alt="">
+                                <p>Marcelo Rangel</p>
+                            </div>
+                        </div>
+                        <div  class="borde-1"><!--HTML-->
+                            <h3>HTML</h3>
+                            <div>
+                                <img src="/Views/Sobre Nosotros/Nosotros/Enrique.png" alt="">
+                                <p>Enrique Púa</p>
+                            </div>
+                            <div>
+                                <img src="/Views/Sobre Nosotros/Nosotros/Mdcc.png" alt="">
+                                <p>Moises Cortes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card"><!--equipo 2-->
+                        <div  class="borde-2"><!--R Markdown-->
+                            <h3>R-Markdown</h3>
+                            <div>
+                                <img src="/Media/Fotos/logo_prueba.png" alt="">
+                                <p>Andre Rodríguez</p>
+                            </div>
+                            <div>
+                                <img src="/Media/Fotos/logo_prueba.png" alt="">
+                                <p>Alexander Martinez</p>
+                            </div>
+                        </div>
+                        <div  class="borde-2"><!--CSS-->
+                            <h3>Limpieza Y Estanderización de datos</h3>
+                            <div class="GR-Css2">
+                                <div>
+                                    <img src="/Views/Sobre Nosotros/Nosotros/image - Cristián Ortíz.jpg" alt="">
+                                    <p>Cristian Ortiz</p>
+                                </div>
+                                <div>
+                                    <img src="/Media/Fotos/logo_prueba.png" alt="">
+                                    <p>Junior Solano</p>
+                                </div>
+                                <div>
+                                    <img src="/Media/Fotos/logo_prueba.png" alt="">
+                                    <p>Johny Gallardo</p>
+                                </div>
+                                <div>
+                                    <img src="/Media/Fotos/logo_prueba.png" alt="">
+                                    <p>Juan Arzuza</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</main>
+
+<footer>
+    <custom-footer></custom-footer>
+</footer>
+<script src="/js/menu.js"></script>
+<script src="/js/model.js"></script>
+</body>
+</html>
+
+
